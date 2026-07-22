@@ -17,10 +17,7 @@
     border: none;
     border-radius: 8px;
 }
-
-section{
-    margin-bottom: 8rem;
-}
+   
 
 
 .section-title{
@@ -74,7 +71,9 @@ section{
     max-width: 1440px;
     margin: 0 auto;
     text-align: center;
+    margin-bottom: 128px;
 }
+
 
 
 .feature-content{
@@ -89,8 +88,6 @@ section{
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
 }
-
-
 
 
 .flower-img-content div {
@@ -122,6 +119,39 @@ section{
     font-size: 1.5rem;
     color:#272727;
 }
+
+
+
+/* icon section related styles  */
+.icon-section{
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-bottom: 128px;
+    background-color: rgba(39, 39, 39, 0.05);
+}
+
+
+.icon-container{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 86px 175px;
+    text-align: center;
+}
+
+.icon-img{
+    margin-bottom: 1.5rem;
+}
+.icon-text{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgba(39, 39, 39, 0.8);
+    margin-top: 0px;
+   
+}
+
+
 
 
 
@@ -157,6 +187,14 @@ section{
         width:100%;
         margin-bottom: 2rem;
     }
+
+    .icon-container{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .icon-content{
+        padding: 30px;
+    }
     
 }
 
@@ -182,6 +220,13 @@ section{
         display: block;
         margin-top: 30px;
         margin-bottom: 50px;
+    }
+    .icon-container{
+        flex-direction: column;
+        padding: 30px;
+    }
+    .icon-content{
+        padding: 40px;
     }
 
 }
