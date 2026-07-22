@@ -173,8 +173,15 @@ section{
     
 
      .feature-img-container{
-        grid-template-columns: 1fr;
-        
+        grid-template-columns: 1fr;        
+    }
+    .flower-img-content div{
+        margin: 0 auto;
+    }
+    .feature-flower-name{
+        display: block;
+        margin-top: 30px;
+        margin-bottom: 50px;
     }
 
 }
