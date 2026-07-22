@@ -156,6 +156,7 @@
 /* offer section related styles  */
 .offer-section{
     background-color: rgba(229, 84, 115, 0.05);
+    margin-bottom: 128px;
 }
 .offer-section-container{
     margin:0 auto;
@@ -173,6 +174,28 @@
     color: rgba(229, 84, 115, 1);
 }
 
+/* instagram section related styles  */
+.instagram-section{
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-bottom: 128px;
+}
+
+.instagram-section-content{
+    max-width: 590px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 48px ;
+}
+
+.instagram-img-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+.instagram-img{
+    width: 100%;
+    }
 
 
 
@@ -199,9 +222,13 @@
         width: 100%;
     }
 
-    .feature-img-container{
+    .feature-img-container, .instagram-img-container{
         grid-template-columns: 1fr;
         margin:20px;
+    }
+    .instagram-img{
+        width: calc(100%-20px);
+        margin-bottom: 30px;
     }
 
     .flower-img-content div img {
@@ -265,6 +292,16 @@
     max-width: 500px;
     text-align: center;
 }
+
+.instagram-img-container{
+    grid-template-columns: repeat(2, 2fr);
+    margin-left:60px;
+    gap: 20px;
+}
+.instagram-img{
+        width: calc(100%-50px);
+        margin-bottom: 30px;
+    }
 
 }
 
