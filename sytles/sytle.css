@@ -153,6 +153,26 @@
 
 
 
+/* offer section related styles  */
+.offer-section{
+    background-color: rgba(229, 84, 115, 0.05);
+}
+.offer-section-container{
+    margin:0 auto;
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px;
+}
+.offer-section-content{
+    max-width: 590px;
+    text-align: center;
+}
+.off-span{
+    color: rgba(229, 84, 115, 1);
+}
+
 
 
 
@@ -163,7 +183,8 @@
 /* small devices media query  */
 
 @media screen and (max-width: 576px) {
-    .header-container{
+    .header-container,
+    .offer-section-container{
         margin: auto 10px;
         flex-direction: column;
         /* align-items: center; */
@@ -195,7 +216,13 @@
     .icon-content{
         padding: 30px;
     }
-    
+
+    .offer-section-container{
+        padding: 20px;
+    }
+    .offer-section-content{
+        margin-bottom: 50px;
+    }
 }
 
 /* medium devices media query */
@@ -228,6 +255,16 @@
     .icon-content{
         padding: 40px;
     }
+    .offer-section-container{
+        padding:40px 20px;
+    }
+    .offer-section-img{
+        width: 100%;
+    }
+    .offer-section-content{
+    max-width: 500px;
+    text-align: center;
+}
 
 }
 
