@@ -8,6 +8,13 @@
 }
 
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 /* shared style */
 .primary-btn{
     background-color: #E55473;
@@ -45,8 +52,10 @@
 }
 
 .header-container{
+    Width: 100%;
     max-width: 1440px;
     margin:0 auto;
+    padding: 50px;
     display: flex;
     gap: 95px;
 }
@@ -68,11 +77,15 @@
 
 /* featured related styles */
 .featured-flower-section{
+    width: 100%;
     max-width: 1440px;
+    padding: 0 40px;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 128px;
+
 }
+
 
 
 
@@ -83,42 +96,48 @@
 }
 .feature-img-container{
     max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    gap: 24px;
 }
 
 
 .flower-img-content div {
-    border: none;
-    border-radius: 300% 300% 0 0;
-    max-width: 29rem; 
-    max-height: 37.5rem;
+    width: 100%;
+    border-radius: 300px 300px 0 0;
     margin-bottom: 2rem;
+    /* border: none;
+    border-radius: 300% 300% 0 0;
+    width: 100%; 
+    max-height: 37.5rem;
+    margin-bottom: 2rem; */
+}
+
+
+.flower1, 
+.flower2, 
+.flower3{
+  
+    height: 540px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /* border-radius: 300px 300px 0 0; */
 }
 
 .flower1{
-    padding:110px 76px 0 76px;
-    /* padding:6.875rem 4.75rem 2rem 4.75rem; */
     background-color: rgba(167, 33, 98, 0.15);
-    max-width: 29rem; 
-
 }
 
 .flower2{
     background-color: rgba(5, 151, 160, 0.15);
-    padding:117px 45px 51px 45px;
-    max-width: 29rem; 
-
-    /* padding: 7.3125rem 2.8125rem 3.1875rem 2.8125rem ; */
 }
 
 .flower3{
     background-color: rgba(71, 125, 17, 0.15);
-    padding:67px 75px 0 75px;
-    max-width: 29rem; 
-
-    /* padding: 4.1875rem 4.6875rem 0 4.6875rem; */
 }
 
 .feature-flower-name{
@@ -183,8 +202,10 @@
 
 /* instagram section related styles  */
 .instagram-section{
+    width: 100%;
     max-width: 1440px;
     margin: 0 auto;
+    padding: 0 50px;
     margin-bottom: 128px;
 }
 
@@ -208,11 +229,29 @@
 
 /* get deals section related styles */
 .get-deals-section{
+    /* width: 100%; */
     max-width: 1440px;
     margin: 0 auto;
     margin-bottom: 128px;
 }
 
+
+/* .get-deals-section-container{
+   
+    background-image: url("/Asset/Rectangle\ 9.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    min-height: 450px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+} */
 .get-deals-section-container{
     background-image:url("/Asset/Rectangle\ 9.png");
     background-repeat: no-repeat;
@@ -246,7 +285,7 @@ input[type="email"]{
     font-size: 1.25rem;
     padding: 1.125rem 1.875rem;
     border: none;
-    border-radius: 8px;
+    border-radius: 0.5rem;
 }
 
 
@@ -284,15 +323,17 @@ footer{
 @media screen and (max-width: 576px) {
     .header-container,
     .offer-section-container{
-        margin: auto 10px;
+        margin: auto 0;
         flex-direction: column;
         /* align-items: center; */
         /* justify-content: center; */
         text-align: center;
+        padding: 20px;
     }
 
     .header-title{
-        text-align: left;
+        /* text-align: left; */
+        font-size: 3.5rem;
     }
     .feature-content{
         width: 100%;
@@ -301,16 +342,32 @@ footer{
     .feature-img-container, 
     .instagram-img-container{
         grid-template-columns: 1fr;
-        margin:20px;
+        /* margin-right:10px; */
+        margin:0px;
+    }
+
+    .flower1, 
+    .flower2, 
+    .flower3{
+        /* margin: 0px; */
+        height: 400px;
+        width: 100%;
+        padding: 0 30px;
+       
     }
     .instagram-img{
-        width: calc(100%-20px);
+        width: 100%;
         margin-bottom: 30px;
     }
 
     .flower-img-content div img {
-        width:100%;
+        width: 100%;
+    }
+    .flower-img-content div{
         margin-bottom: 2rem;
+    }
+    .flower-img-content{
+        margin-bottom: 3rem;
     }
 
     .icon-container{
@@ -329,12 +386,26 @@ footer{
     }
 
     .get-deals-section-container{
-        padding:50px 20px;
+        padding:50px 10px;
         /* width: 100%; */
+        /* margin: 20px; */
     }
     .inputAndbtn-container{
-        width: 100%;
+        flex-direction: column;
+        margin: 0 20px;
+        width:calc(100% - 40px);
+
+        /* width: 100%; */
     }
+    input[type="email"]{
+        margin: 0;
+        margin-bottom: 30px;
+        width: calc(100% - 40px) ;
+    }
+    .input-btn{
+        justify-items: right;
+    }
+
 
     footer{
         padding: 20px;
@@ -354,7 +425,9 @@ footer{
     
 
     .feature-img-container{
-        grid-template-columns: repeat(1, 1fr);       
+        grid-template-columns: repeat(2, 1fr);  
+        grid-template-rows: auto;    
+        padding: 0; 
     }
 
     .flower-img-content div{
@@ -400,25 +473,18 @@ footer{
     }
     .inputAndbtn-container{
         width: calc(100%-20px);
+        padding: 0 50px;
     }
     footer{
         padding: 40px;
     }
 
+    .instagram-section{
+        width: 100%;
+        padding: 10px;
+    }
+    /* .get-deals-section-container{
+        margin: 0 20px;
+    } */
 }
 
-/* large-devices  */
-@media screen and (min-width: 992px) and (max-width: 1400px){
-    .feature-img-container{
-        margin: 50px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .flower-img-content div{
-        width:calc(100%-50px);
-
-    }
-
-}
